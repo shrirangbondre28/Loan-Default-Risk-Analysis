@@ -1,6 +1,5 @@
 # Loan-Default-Risk-Analysis
-This project includes SQL data validation, EDA, statistical analysis and Power BI dashboard to identify high risk customers and support data driven lending decisions.
-
+.
 ## Table of Contents
 - [Background Overview](#background-overview)
 - [Problem Statement](#problem-statement)
@@ -14,6 +13,7 @@ This project includes SQL data validation, EDA, statistical analysis and Power B
 - [Dashboard Explanation](#dashboard-explanation)
 
 ## Dataset Link : [https://drive.google.com/file/d/1RYntjTaRINDeZrUPD77lCymrXTNu9FXR/view?usp=drive_link]
+## Cleaned Data: [https://drive.google.com/file/d/18ek4ACXVt_gNUzOVekicW1m3VavBZuQs/view?usp=drive_link]
 
 ## Background Overview : 
 The financial services industry provides loans to customers, but a portion of borrowers fail to repay, resulting in loan defaults and financial losses. This project analyzes borrower financial and behavioral data to identify high risk customer segments and help financial institutions make better credit approval and risk management decisions.
