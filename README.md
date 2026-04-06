@@ -66,6 +66,20 @@ This project follows a structured analytics workflow used in risk analytics and 
 - Credit score and DTI together explain most of the default variation borrowers with Poor credit (<580) and DTI above 50% default at rates approaching 2–3× the portfolio average; this combination is the single most actionable rule for a credit policy cut-off.
 - The portfolio lacks risk stratification at origination all four employment types and all five loan purposes appear in nearly equal proportions (~63–64K loans each), suggesting loans were approved without meaningful segment level filtering. A rule-based segmentation framework (Low / Medium / High Risk tiers) applied at underwriting would be expected to reduce the overall default rate by redirecting or repricing the High Risk tier.
 
+## Insights & business recommendations :
+Key insights :
+- The portfolio default rate of 11.61% is high for a prime lending book — this suggests either a subprime portfolio or loose underwriting in certain segments.
+  Unemployed borrowers receiving loans at all is a red flag — this should be near-zero in a well-underwritten book.
+- With equal distribution across employment types (~64K each), the portfolio appears to not be filtering by employment status, which explains the high overall    default rate.
+- High-interest-rate borrowers (>18%) carry the highest default rates because rate is both a risk indicator and a driver of payment stress.
 
-
+### Business Recommendations Based on Risk Segmentation
+| Customer Segment                     | Recommended Action                     | Why                                                      |
+|------------------------------------|----------------------------------------|----------------------------------------------------------|
+| Low Risk (score ≤ 3)               | Approve, offer best rates              | Low default rate → highly profitable segment              |
+| Medium Risk (score 4–6)            | Approve with higher interest rate      | Risk can be priced; still profitable                     |
+| High Risk (score ≥ 7)              | Decline or require co-signer           | Default rate exceeds acceptable loss threshold           |
+| Unemployed + Poor Credit           | Decline                                | No stable income + weak credit history                   |
+| High Income + Exceptional Credit   | Target for marketing                   | Lowest risk, high lifetime value, low acquisition cost   |
+| Self-employed + Low DTI            | Approve                                | Income variability offset by strong debt management      |
 
