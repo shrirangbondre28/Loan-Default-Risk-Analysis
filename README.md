@@ -8,22 +8,22 @@
 - [Project Workflow](#project-workflow)
 - [Executive Summary](#executive-summary)
 - [Insights Deep Dive](#insights-deep-dive)
-- [Risk Segmentation Strategy](#risk-segmentation-strategy)
 - [Business Recommendations](#business-recommendations)
 - [Dashboard Explanation](#dashboard-explanation)
-## Dataset Link : [https://drive.google.com/file/d/1RYntjTaRINDeZrUPD77lCymrXTNu9FXR/view?usp=drive_link]
-## Cleaned Data: [https://drive.google.com/file/d/18ek4ACXVt_gNUzOVekicW1m3VavBZuQs/view?usp=drive_link]
+### Dataset Link : [https://drive.google.com/file/d/1RYntjTaRINDeZrUPD77lCymrXTNu9FXR/view?usp=drive_link]
+### Cleaned Data: [https://drive.google.com/file/d/18ek4ACXVt_gNUzOVekicW1m3VavBZuQs/view?usp=drive_link]
 
-## Background Overview : 
+## Background Overview 
 The financial services industry provides loans to customers, but a portion of borrowers fail to repay, resulting in loan defaults and financial losses. This project analyzes borrower financial and behavioral data to identify high risk customer segments and help financial institutions make better credit approval and risk management decisions.
 
-## Problem Statement : 
+## Problem Statement
+
 ### Business objective: 
 Banks needs to minimize credit losses while maintaining loan portfolio growth. When borrowers default, bank loses principal and incurs collection costs. The business wants to identify which customer profiles carry high default risk before approving loans.
 ### Analytical objective: 
 Segment the 255K loan portfolio by risk profile using observable characteristics (income, credit score, DTI, employment type) and quantify default rates at each risk level, to produce decision rules for credit approvals, pricing, and marketing targeting.
 
-## Data Structure Overview : 
+## Data Structure Overview
 The dataset contains 250,000+ loan records with 19 variables describing borrower demographics, financial information, loan details, and repayment status. The target variable is Default, which indicates whether the borrower defaulted on the loan.
 | Column Name    | Data Type            | Description                                                |
 | -------------- | -------------------- | ---------------------------------------------------------- |
@@ -47,17 +47,17 @@ The dataset contains 250,000+ loan records with 19 variables describing borrower
 | Default        | Binary (0/1)         | Target variable: 1 = Default, 0 = No Default               |
 | Loan Date      | Date                 | Date when the loan was issued                              |
 
-## Tools Used : 
+## Tools Used
 - Python (ydata-profiling, numpy, pandas, matplotlib, seaborn)
 - SQL (PostgreSQL)
 - Power BI
 
-## Project Workflow :
+## Project Workflow
 
 This project follows a structured analytics workflow used in risk analytics and business intelligence projects:
 <img width="1024" height="432" alt="image" src="https://github.com/user-attachments/assets/ee8c240a-662f-461d-b2bc-aa9db29fe7cb" />
 
-## Executive Summary : 
+## Executive Summary
 
 - Portfolio default rate stands at 11.61%, nearly double the industry prime lending benchmark of ~6%, indicating the book contains a significant subprime segment   that has not been adequately risk-priced or filtered at origination.
 - Employment type is the strongest behavioral risk signal, Unemployed borrowers represent ~25% of the entire portfolio (≈64K loans), a structurally unsound concentration given that unemployment eliminates income continuity, the most basic condition for loan repayment.
@@ -65,14 +65,14 @@ This project follows a structured analytics workflow used in risk analytics and 
 - Credit score and DTI together explain most of the default variation borrowers with Poor credit (<580) and DTI above 50% default at rates approaching 2–3× the portfolio average; this combination is the single most actionable rule for a credit policy cut-off.
 - The portfolio lacks risk stratification at origination all four employment types and all five loan purposes appear in nearly equal proportions (~63–64K loans each), suggesting loans were approved without meaningful segment level filtering. A rule-based segmentation framework (Low / Medium / High Risk tiers) applied at underwriting would be expected to reduce the overall default rate by redirecting or repricing the High Risk tier.
 
-## Insights & business recommendations :
+## Insights Deep Dive
 Key insights :
 - The portfolio default rate of 11.61% is high for a prime lending book — this suggests either a subprime portfolio or loose underwriting in certain segments.
   Unemployed borrowers receiving loans at all is a red flag — this should be near-zero in a well-underwritten book.
 - With equal distribution across employment types (~64K each), the portfolio appears to not be filtering by employment status, which explains the high overall    default rate.
 - High-interest-rate borrowers (>18%) carry the highest default rates because rate is both a risk indicator and a driver of payment stress.
 
-### Business Recommendations Based on Risk Segmentation
+## Business Recommendations
 | Customer Segment                     | Recommended Action                     | Why                                                      |
 |------------------------------------|----------------------------------------|----------------------------------------------------------|
 | Low Risk (score ≤ 3)               | Approve, offer best rates              | Low default rate → highly profitable segment              |
