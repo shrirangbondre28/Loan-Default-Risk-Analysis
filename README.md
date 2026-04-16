@@ -89,9 +89,9 @@ Key insights :
 - High-interest-rate borrowers (>18%) carry the highest default rates because rate is both a risk indicator and a driver of payment stress.
 
 ## Business Recommendations
-| Customer Segment                     | Recommended Action                     | Why                                                      |
+| Customer Segment                   | Recommended Action                     | Why                                                      |
 |------------------------------------|----------------------------------------|----------------------------------------------------------|
-| Low Risk (score ≤ 3)               | Approve, offer best rates              | Low default rate → highly profitable segment              |
+| Low Risk (score ≤ 3)               | Approve, offer best rates              | Low default rate → highly profitable segment             |
 | Medium Risk (score 4–6)            | Approve with higher interest rate      | Risk can be priced; still profitable                     |
 | High Risk (score ≥ 7)              | Decline or require co-signer           | Default rate exceeds acceptable loss threshold           |
 | Unemployed + Poor Credit           | Decline                                | No stable income + weak credit history                   |
