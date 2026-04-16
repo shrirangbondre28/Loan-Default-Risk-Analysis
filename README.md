@@ -7,11 +7,11 @@
 - [Tools Used](#tools-used)
 - [Project Workflow](#project-workflow)
 - [Executive Summary](#executive-summary)
+- [Dashboard Report Pages](#dashboard-report-pages)
 - [Insights Deep Dive](#insights-deep-dive)
 - [Business Recommendations](#business-recommendations)
-- [Dashboard Explanation](#dashboard-explanation)
-### Dataset Link : [https://drive.google.com/file/d/1RYntjTaRINDeZrUPD77lCymrXTNu9FXR/view?usp=drive_link]
-### Cleaned Data: [https://drive.google.com/file/d/18ek4ACXVt_gNUzOVekicW1m3VavBZuQs/view?usp=drive_link]
+
+### Cleaned Dataset: [https://drive.google.com/file/d/18ek4ACXVt_gNUzOVekicW1m3VavBZuQs/view?usp=drive_link]
 
 ## Background Overview 
 The financial services industry provides loans to customers, but a portion of borrowers fail to repay, resulting in loan defaults and financial losses. This project analyzes borrower financial and behavioral data to identify high risk customer segments and help financial institutions make better credit approval and risk management decisions.
@@ -62,8 +62,24 @@ This project follows a structured analytics workflow used in risk analytics and 
 - Portfolio default rate stands at 11.61%, nearly double the industry prime lending benchmark of ~6%, indicating the book contains a significant subprime segment   that has not been adequately risk-priced or filtered at origination.
 - Employment type is the strongest behavioral risk signal, Unemployed borrowers represent ~25% of the entire portfolio (≈64K loans), a structurally unsound concentration given that unemployment eliminates income continuity, the most basic condition for loan repayment.
 - High rate borrowers (>18% interest) are simultaneously the most stressed and most likely to default interest rates above 18% compound monthly payment burden on top of already high DTI ratios, creating a self reinforcing default spiral where the risk pricing itself becomes a driver of the outcome it was meant to compensate for.
+
 - Credit score and DTI together explain most of the default variation borrowers with Poor credit (<580) and DTI above 50% default at rates approaching 2–3× the portfolio average; this combination is the single most actionable rule for a credit policy cut-off.
 - The portfolio lacks risk stratification at origination all four employment types and all five loan purposes appear in nearly equal proportions (~63–64K loans each), suggesting loans were approved without meaningful segment level filtering. A rule-based segmentation framework (Low / Medium / High Risk tiers) applied at underwriting would be expected to reduce the overall default rate by redirecting or repricing the High Risk tier.
+
+## Dashboard Report Pages 
+### Page 1 : Executive Overview
+<img width="1022" height="681" alt="image" src="https://github.com/user-attachments/assets/7c11795d-a338-4cab-8b78-935598b30391" />
+
+### Page 2 : Risk Analysis 
+<img width="1020" height="677" alt="image" src="https://github.com/user-attachments/assets/cca3663c-c24b-4ba2-9025-1122d75f1173" />
+
+### Page 3 : Cohort Analysis
+<img width="1019" height="670" alt="image" src="https://github.com/user-attachments/assets/3b5f5d62-bbd7-422d-9657-a7aa2647ba85" />
+
+### Quick Overview 
+<img width="1021" height="677" alt="image" src="https://github.com/user-attachments/assets/c27b4661-50e5-4ece-bfb9-5429b2842d5c" />
+
+
 
 ## Insights Deep Dive
 Key insights :
