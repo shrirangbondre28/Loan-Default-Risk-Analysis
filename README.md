@@ -66,7 +66,7 @@ This project follows a structured analytics workflow used in risk analytics and 
 - Credit score and DTI together explain most of the default variation borrowers with Poor credit (<580) and DTI above 50% default at rates approaching 2–3× the portfolio average; this combination is the single most actionable rule for a credit policy cut-off.
 - The portfolio lacks risk stratification at origination all four employment types and all five loan purposes appear in nearly equal proportions (~63–64K loans each), suggesting loans were approved without meaningful segment level filtering. A rule-based segmentation framework (Low / Medium / High Risk tiers) applied at underwriting would be expected to reduce the overall default rate by redirecting or repricing the High Risk tier.
 
-## Dashboard Report Pages 
+## Dashboard Report Pages
 ### Page 1 : Executive Overview
 <img width="1022" height="681" alt="image" src="https://github.com/user-attachments/assets/7c11795d-a338-4cab-8b78-935598b30391" />
 
